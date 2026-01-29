@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="notepad.png">
+      <title>To Do List App</title>
+</head>
+<body>
+      <div class="container">
+            <div class="to-do-app">
+                  <h2>Todo List
+                        <img src="images/notepad.png">
+                        <span class="filterDisplay">Filter by:  <span class="fName"></span></span>
+                           <div class="filters-div">
+                                    <img src="images/filter(2).png" alt="Filter tasks based on completed status" id="statusFilterIcon">
+                                    <div class="statusBox">
+                                          <p data-status="All"  class="status-btn active">All</p>
+                                          <p data-status="Active"  class="status-btn">Active</p>
+                                          <p data-status="Completed"  class="status-btn">Completed</p>
+                                    </div>
+                                    <img src="images/filter(1).png" alt="Filter tasks based on category" id="categoryFilterIcon">
+                                    <div class="filterBox">
+                                          <p id="filter-label">Filter by:</p>
+                                          <p data-filter="All">All</p>
+                                          <p data-filter="Work">Work</p>
+                                          <p data-filter="Personal">Personal</p>
+                                          <p data-filter="Study">Study</p>
+                                          <p data-filter="Uncategorized">Uncategorized</p>
+                                    </div>
+                          </div>
+                  </h2>
+                  <div class="row">
+                        <input type="text" id="input-box" placeholder="Add your task here">
+                        <button id="add-btn">Add</button>
+                  </div>
+                  <p id="err-msg"></p>
+                  <p id="category-err">Nothing to see here yet . . . </p>
+                  <div class="category-box">
+                        <p id="no-select">Category:</p>
+                        <p id="work">Work</p>
+                        <p id="personal">Personal</p>
+                        <p id="study">Study</p>
+                        <p class="uncategorized">Uncategorized</p>
+                  </div>
+                  <ul id="list-container">
+                  </ul>
+            </div>
+      </div>
+      
+<script src="script.js"></script>
+</body>
+</html>
